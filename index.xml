@@ -11,6 +11,104 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Monty Hall Problem- A Bayesian Reasoning</title>
+      <link>https://aunmesh.github.io/post/monty-hall/</link>
+      <pubDate>Thu, 23 Aug 2018 04:52:10 +0530</pubDate>
+      
+      <guid>https://aunmesh.github.io/post/monty-hall/</guid>
+      <description>
+
+&lt;p&gt;Monty Hall Problem is famous problem in probability.  It is not only famous, but also important. This problem tests how good we understand probability. One of its appearence in popular culture is in this &lt;a href=&#34;https://www.youtube.com/watch?v=Zr_xWfThjJ0&#34; target=&#34;_blank&#34;&gt;scene&lt;/a&gt; of &amp;ldquo;21&amp;rdquo; movie. Please ignore, the explanation given there. But I bet you can&amp;rsquo;t ignore the amazing Kevin Spacey.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;So, what is the problem?
+Problem statement(taken from &lt;a href=&#34;https://en.wikipedia.org/wiki/Monty_Hall_problem&#34; target=&#34;_blank&#34;&gt;wiki&lt;/a&gt;):
+&lt;br&gt;&lt;br&gt;
+&lt;strong&gt;&lt;em&gt;Suppose you&amp;rsquo;re on a game show, and you&amp;rsquo;re given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who goes by the name Monty, knows what&amp;rsquo;s behind the doors. He opens another door, say No. 3, which has a goat. He then says to you, &amp;ldquo;Do you want to pick door No. 2?&amp;rdquo; Is it to your advantage to switch your choice?&lt;/em&gt;&lt;/strong&gt;
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;I first became acquainted with this problem during an internship interview. I had just started my sophomore year in college. This was the first problem interviewer asked me. I tried to think, but couldn&amp;rsquo;t understand why should we even bother to revise. Finally, I decided that it was a trick question, and said that no we shouldn&amp;rsquo;t. I made up a faulty reasoning to support my claim. I wasn&amp;rsquo;t given an offer, and I place the blame on this wretched problem.(Hence, the blog post :P)&lt;/p&gt;
+
+&lt;h3 id=&#34;why-why-should-we-even-bother-to-switch-br&#34;&gt;&amp;ldquo;Why? Why should we even bother to switch?&amp;rdquo;&lt;br&gt;&lt;/h3&gt;
+
+&lt;p&gt;It is important to address this &amp;ldquo;why&amp;rdquo; before proceeding any further. We need to bother simply because there is a change in information. Extra information has been made available by Monty. That information is the presence of a goat behind the third door. This information was not there when we picked door 1. At the start, there was the possibility, that the car could be behind the 3rd door. Now we know for sure that it is not the case. Hence, we need to think.&lt;/p&gt;
+
+&lt;h3 id=&#34;enter-probability&#34;&gt;Enter Probability&lt;/h3&gt;
+
+&lt;p&gt;Probability theorem is an amazing part of Mathematics. One of the reasons it is so amazing is because it has enabled a rational procedure for making guesses. I will say that again - &lt;strong&gt;&lt;em&gt;&amp;ldquo;Rational Guess Work&amp;rdquo;&lt;/em&gt;&lt;/strong&gt;. And thus, if we are to be smart here, and make rational choices, we need to follow Probability Theory.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-answer&#34;&gt;The Answer&lt;/h3&gt;
+
+&lt;p&gt;Lets not stand on ceremony here and reveal the answer. The answer is - &lt;strong&gt;&lt;em&gt;Yes, it is in our interest to switch&lt;/em&gt;&lt;/strong&gt;. In fact, the probability of us winning if we switch is &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;, while if we don&amp;rsquo;t is just &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;.
+&lt;br&gt;Counter-intuitive? Yes? No? For me it was. It was very counter-intuitive that we should switch.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-faulty-argument-that-we-should-not-switch&#34;&gt;A faulty argument that we should not switch&lt;/h3&gt;
+
+&lt;p&gt;[Note: We represent Car by &lt;strong&gt;C&lt;/strong&gt; and Goat by &lt;strong&gt;G&lt;/strong&gt;]&lt;br&gt;
+A faulty argument using probability theory proceeds as follow:
+&lt;br&gt;Upon revelation, by Monty, there is now a 50-50 chance of our door having the car. This is because our door can now have either car or goat. And since only goat is left, the possibilities are: &lt;br&gt; &lt;strong&gt;C G&lt;/strong&gt;, or &lt;strong&gt;G C&lt;/strong&gt;. Hence there is &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; probability for each configuration, and so making a switch does not help.&lt;/p&gt;
+
+&lt;h5 id=&#34;where-s-the-fault&#34;&gt;Where&amp;rsquo;s the fault?&lt;/h5&gt;
+
+&lt;p&gt;The fault is in assuming that both these configurations are equi-probable. That is, the possibility that one can occur is same as the other. However, that is not the case. It will become clear later, as to why that is not the case. But, the major reason this mistake is committed is because history is ignored. The past information is compltely ignored and only the current possibilities are consulted.&lt;/p&gt;
+
+&lt;p&gt;Possible configurations according to the past information:&lt;br&gt;
+&lt;strong&gt;C G G&lt;/strong&gt; (config 1) , &lt;strong&gt;G C G&lt;/strong&gt;(config 2) , &lt;strong&gt;G G C&lt;/strong&gt;(config 3)
+&lt;br&gt; All of these are equiprobable hence each of the configurations probability is &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-correct-reasoning&#34;&gt;A correct reasoning&lt;/h3&gt;
+
+&lt;p&gt;Now, upon revelation, we reason as follows:&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;If the starting configuration was &lt;em&gt;config 1&lt;/em&gt;, then Monty could have opened either door 2 or door 3. Thus the likelihood of Monty opening door 3(assuming he is constrained to open the doors which weren&amp;rsquo;t picked), is &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;.
+If the starting configuration was &lt;em&gt;config 2&lt;/em&gt;, Monty would have been forced to open door 3, as he could not open door 2(as door 2 has car behind it). So, the likelihood of opening door 3 in this case is 1.
+&lt;br&gt;Hence we see that present events(Monty revealing to us door 3 and it having a goat) would have been twice as probable to occur if &lt;em&gt;config 2&lt;/em&gt; was originally the case than if &lt;em&gt;config 1&lt;/em&gt; was the case. And since the present event did occur, by a simple application of Bayes Rule , we can see that we are twice as likely to win if we switch, than if we don&amp;rsquo;t.
+&lt;br&gt;&lt;br&gt;
+While this reasoning is correct, it is also convoluted. It is not simple and lucid. Beofre presenting a simpler reasoning, I will cite from this &lt;a href=&#34;https://betterexplained.com/articles/understanding-the-monty-hall-problem/&#34; target=&#34;_blank&#34;&gt;blog&lt;/a&gt;, another way at why switching is beneficial.&lt;/p&gt;
+
+&lt;h3 id=&#34;why-switching-is-better-courtsey-of-betterexplained-https-betterexplained-com-articles-understanding-the-monty-hall-problem&#34;&gt;Why switching is better [courtsey of &lt;a href=&#34;https://betterexplained.com/articles/understanding-the-monty-hall-problem/&#34; target=&#34;_blank&#34;&gt;betterexplained&lt;/a&gt;]&lt;/h3&gt;
+
+&lt;p&gt;Let’s see why removing doors makes switching attractive. Instead of the regular game, imagine this variant:&lt;br&gt;
+1. There are 100 doors to pick from in the beginning&lt;br&gt;
+2. You pick one door&lt;br&gt;
+* Monty looks at the 99 others, finds the goats, and opens all but 1&lt;br&gt;
+Do you stick with your original door (&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;100&lt;/sub&gt;), or the other door, which was filtered from 99?&lt;/p&gt;
+
+&lt;p&gt;It’s a bit clearer: Monty is taking a set of 99 choices and improving them by removing 98 goats. When he’s done, he has the top door out of 99 for you to pick.&lt;/p&gt;
+
+&lt;p&gt;Your decision: Do you want a random door out of 100 (initial guess) or the best door out of 99? Said another way, do you want 1 random chance or the best of 99 random chances?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;We’re starting to see why Monty’s actions help us. He’s letting us choose between a generic, random choice and a curated, filtered choice. Filtered is better.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;a-bayesian-reasoning&#34;&gt;A Bayesian Reasoning&lt;/h3&gt;
+
+&lt;p&gt;One realises, if they look at the problem carefully, is that the probability of door 1 having a car hasn&amp;rsquo;t changed. Before revelation proability that door 1 has Car was &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;. Post revelation the probability still remains &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;.
+&lt;br&gt;( This is because pre revelation, door 1 could either have a car, or 1st goat or 2nd goat. Hence &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; probability .Post revelation we have seen that configuration &lt;strong&gt;C G&lt;/strong&gt; has &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; probability and configuration &lt;strong&gt;G C&lt;/strong&gt; has &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; probability. So, post revelation, probability of door 1 having a car is same as the probability of &lt;strong&gt;C G&lt;/strong&gt; configuration, or &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;).&lt;/p&gt;
+
+&lt;p&gt;This is remarkable.
+Let&amp;rsquo;s see why this happens.
+&lt;br&gt;When I chose door 1, I had placed my belief on &lt;em&gt;config 1&lt;/em&gt;. So, when Monty opened door 3 and showed me a goat, should I be surprised? If I should be surprised, by how much should I be surprised? Since I chose &lt;em&gt;config 1&lt;/em&gt;, I hoped the Car to be in the first door and goats behind the other 2 doors. Thus, if I assume &lt;em&gt;config 1&lt;/em&gt; to be the case, I shouldn&amp;rsquo;t be surprised at all that the goat is behind door 3. However, I should be surprised. This is not because of the goats or cars, but because of what Monty did. Monty revealed door 3, rather than door 2. Why? How probable is this. It&amp;rsquo;s probability is &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;. Monty revealing door 3 should surprise us even if we assume &lt;em&gt;config 1&lt;/em&gt; to be true.
+&lt;br&gt;Let&amp;rsquo;s revisit Baye&amp;rsquo;s rule:&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;P(B|A) = A(A|B)P(B)/P(A)
+&lt;br&gt;or in our case &lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;P( Car behind door 1 | what happened) = P(what happened | Car behind door 1) * P(Car behind door 1 | knowledge before game) / P(what happened | knowledge before game)&lt;/p&gt;
+
+&lt;p&gt;We have ascertained that P(all that happened | Car behind door 1) = &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;.
+&lt;br&gt;Now what is P( all that happened)? We have to find the probability of &amp;ldquo;What happened&amp;rdquo; given our prior knowledge, that is at the beginning of the game. Or more clearly, what is the probability that I would have chosen door 1, and then Monty would have revealed door 3 to be having a goat?
+&lt;br&gt; Let&amp;rsquo;s find out this probability using 3 disjoint events. That is 3 disjoint configurations. &amp;ldquo;What happened&amp;rdquo;, could not have happened if &lt;em&gt;config 3&lt;/em&gt; was the case. &amp;ldquo;What happened&amp;rdquo; could have happened with 1 probability if &lt;em&gt;config 2&lt;/em&gt; was the case. However, &lt;em&gt;config 2&lt;/em&gt; has &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; probability. What happened could have happened with &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; probability if &lt;em&gt;config 1&lt;/em&gt; were the case, however, &lt;em&gt;config 1&lt;/em&gt; itself has &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; probability.&lt;/p&gt;
+
+&lt;p&gt;Hence net probability of &amp;ldquo;What happened&amp;rdquo; given our prior beliefs is &lt;br&gt;
+&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;*&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; + &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; = &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;.&lt;/p&gt;
+
+&lt;p&gt;So, we see that  P(what happened | Car behind door 1) = P(what happened | knowledge before game).
+&lt;br&gt; They cancel out and we are left with:&lt;br&gt;
+P( Car behind door 1 | what happened) = P(Car behind door 1 | knowledge before game).
+&lt;br&gt;So, now we know why the probability stays the same.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Approximate Inference for MetaLDA using SGRLD </title>
       <link>https://aunmesh.github.io/project/approxmetalda/</link>
       <pubDate>Sun, 12 Aug 2018 17:20:36 +0530</pubDate>

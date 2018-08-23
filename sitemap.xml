@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>https://aunmesh.github.io/post/monty-hall/</loc>
+      <lastmod>2018-08-23T04:52:10+05:30</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://aunmesh.github.io/project/approxmetalda/</loc>
       <lastmod>2018-08-12T17:20:36+05:30</lastmod>
     </url>
@@ -119,6 +128,16 @@
     
       <loc>https://aunmesh.github.io/tags/langevin-dynamics/</loc>
       <lastmod>2018-08-12T17:20:36+05:30</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://aunmesh.github.io/tags/probability/</loc>
+      <lastmod>2018-08-23T04:52:10+05:30</lastmod>
       <priority>0</priority>
     </url>
     
