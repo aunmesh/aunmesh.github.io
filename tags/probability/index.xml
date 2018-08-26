@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy Asim Unmesh; 2018</copyright>
-    <lastBuildDate>Thu, 23 Aug 2018 04:52:10 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 26 Aug 2018 07:00:23 +0530</lastBuildDate>
     
 	<atom:link href="https://aunmesh.github.io/tags/probability/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Two Envelopes</title>
+      <link>https://aunmesh.github.io/post/two-envelopes/</link>
+      <pubDate>Sun, 26 Aug 2018 07:00:23 +0530</pubDate>
+      
+      <guid>https://aunmesh.github.io/post/two-envelopes/</guid>
+      <description>Two Envelopes Paradox is another one of those problems which test your probability and math basics. Some times being mathematically correct, means being methodical and writing each step properly in your logic. Leaving nothing but the axioms as assumptions.
+So let&amp;rsquo;s quickly get into the problem.
+The problem Wiki Link
+&amp;ldquo;You are given two indistinguishable envelopes, each containing money, one contains twice as much as the other. You may pick one envelope and keep the money it contains.</description>
+    </item>
     
     <item>
       <title>Monty Hall Problem : Way of the Bayesian</title>
