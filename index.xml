@@ -11,6 +11,124 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Two Envelopes</title>
+      <link>https://aunmesh.github.io/post/two-envelopes/</link>
+      <pubDate>Sun, 26 Aug 2018 07:00:23 +0530</pubDate>
+      
+      <guid>https://aunmesh.github.io/post/two-envelopes/</guid>
+      <description>
+
+&lt;p&gt;Two Envelopes Paradox is another one of those problems which test your probability and math basics. Some times being mathematically correct, means being methodical and writing each step properly in your logic. Leaving nothing but the axioms as assumptions.&lt;/p&gt;
+
+&lt;p&gt;So let&amp;rsquo;s quickly get into the problem.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Two_envelopes_problem&#34; target=&#34;_blank&#34;&gt;Wiki Link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;&amp;ldquo;You are given two indistinguishable envelopes, each containing money, one contains twice as much as the other. You may pick one envelope and keep the money it contains. Having chosen an envelope at will, but before inspecting it, you are given the chance to switch envelopes. Should you switch?&amp;rdquo;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;a-faulty-argument&#34;&gt;A faulty argument&lt;/h3&gt;
+
+&lt;p&gt;There&amp;rsquo;s an argument that favours switching. THe problem is to find the fault in this argument. (Obviously its no use switching your choices).&lt;/p&gt;
+
+&lt;p&gt;The switching argument: Now suppose you reason as follows:&lt;br&gt;
+1. I denote by A the amount in my selected envelope.&lt;br&gt;
+2.The probability that A is the smaller amount is &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;, and that it is the larger amount is also &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;.&lt;br&gt;
+3. The other envelope may contain either 2A or A/2.&lt;br&gt;
+4. If A is the smaller amount, then the other envelope contains 2A.&lt;br&gt;
+5. If A is the larger amount, then the other envelope contains A/2.&lt;br&gt;
+6. Thus the other envelope contains 2A with probability &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; and A/2 with probability &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;.&lt;br&gt;
+7. So the expected value of the money in the other envelope is:
+\begin{align}
+\frac{1}{2} (2A) + \frac{1}{2} (\frac{A}{2}) = \frac{5A}{4}
+\end{align}&lt;br&gt;
+8. This is greater than A, so I gain on average by swapping.&lt;br&gt;
+9. After the switch, I can denote that content by B and reason in exactly the same manner as above.&lt;br&gt;
+10. I will conclude that the most rational thing to do is to swap back again.&lt;br&gt;
+11. To be rational, I will thus end up swapping envelopes indefinitely.&lt;br&gt;
+12. As it seems more rational to open just any envelope than to swap indefinitely, we have a contradiction.&lt;br&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;something-s-fishy-part-1&#34;&gt;Something&amp;rsquo;s fishy.(Part 1)&lt;/h3&gt;
+
+&lt;p&gt;Let S be the total sum in both envelopes.&lt;/p&gt;
+
+&lt;p&gt;When Envelope 1 has larger value:
+\begin{align}
+S = A + \frac{A}{2} = \frac{3A}{2}
+\end{align}
+&lt;br&gt;
+When Envelope 1 has smaller value:
+\begin{align}
+S = A + 2A = 3A
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;But, the sum should be constant in both the cases. This is, from a first look, what goes wrong here.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-s-a&#34;&gt;What&amp;rsquo;s A?&lt;/h3&gt;
+
+&lt;p&gt;We saw in the last section that the sum of values in both envelopes were not coming out to be equal. This requires us to look at what is A.&lt;br&gt;
+What exactly is A?&lt;br&gt;
+Since A is being used to compare with the expected value of money in the second envelope, A is actually the expected value of money in Envelope 1.&lt;/p&gt;
+
+&lt;p&gt;Let &lt;em&gt;a&lt;/em&gt; denote the value of the money in Envelope 1, then:&lt;/p&gt;
+
+&lt;p&gt;\begin{align}
+E_p[a] = A
+\end{align}
+where p is the probability density function on random variable a.&lt;/p&gt;
+
+&lt;p&gt;Now, that we understand what&amp;rsquo;s A. Let&amp;rsquo;s see what went wrong.&lt;/p&gt;
+
+&lt;h3 id=&#34;something-s-fishy-part-2&#34;&gt;Something&amp;rsquo;s fishy.(Part 2)&lt;/h3&gt;
+
+&lt;p&gt;As, stated earlier, sometimes being mathematically correct, means writing down things well.&lt;/p&gt;
+
+&lt;p&gt;Let b denote value of money in 2nd envelope.
+So,
+\begin{align}
+E_q[b] = B
+\end{align}
+\begin{align}
+B = P(a&amp;gt;b)E[a \mid a &amp;gt; b)  + P(a&amp;gt;b)E[a \mid a &amp;gt; b)
+\end{align}
+\begin{align}
+B = \frac{1}{2}E[a \mid a &amp;gt; b] +  \frac{1}{2}E[a \mid a &amp;lt; b]
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;We observe that,
+\begin{align}
+E[a \mid a &amp;gt; b] &amp;gt; A\  \,, \ E[a \mid a &amp;gt; b] &amp;lt; A
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;
+This is because average of $E[a \mid a &amp;gt; b]$ and $E[a \mid a &amp;lt; b]$ is A. And since intuitively,
+&lt;br&gt;
+\begin{align}
+E[a \mid a &amp;gt; b] &amp;gt;  E[a \mid a &amp;gt; b]
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;(8) should hold.&lt;/p&gt;
+
+&lt;p&gt;Hence substituting both $E[a \mid a &amp;gt; b]$ and $E[a \mid a &amp;lt; b]$ as A is wrong in step 7 of the argument.&lt;/p&gt;
+
+&lt;p&gt;However, we were asserting that being mathematically correct means writing everything down. So, let&amp;rsquo;s not leave (8) and (9) to intuition and see more concretely why they are true.&lt;/p&gt;
+
+&lt;h3 id=&#34;be-rigourous-be-right&#34;&gt;Be rigourous, be right&lt;/h3&gt;
+
+&lt;p&gt;Let $P(x,y)$ denote the joint probability of amount x being in envelope 1 and amount y being in envelope 2.&lt;/p&gt;
+
+&lt;p&gt;We assert that \begin{align}
+P(x,y) = P(y,x)
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s easy to see this is true. If $x\neq2y$ or $2x\neq y$, then $P(x,y) = 0$.(such an arrangement is not possible as one of $x$ and $y$ must be double of other)&lt;/p&gt;
+
+&lt;p&gt;However, if this is not the case, then envelope $1$ and envelope $2$ are not subject of any bias. That is they are &lt;em&gt;indistinguishable&lt;/em&gt; and hence probability that amount $x$ is kept in envelope $1$ and $y$ is kept in envelope $2$ is same as $x$ is kept in $2$ and $y$ is kept in $1$.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Monty Hall Problem : Way of the Bayesian</title>
       <link>https://aunmesh.github.io/post/monty-hall/</link>
       <pubDate>Thu, 23 Aug 2018 04:52:10 +0530</pubDate>
