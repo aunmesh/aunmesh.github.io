@@ -92,7 +92,7 @@ We will see why this happens, as we argue that we should switch.&lt;/p&gt;
 \begin{align}
 P(what\ happened \mid Car\ behind\ door\ 1) = P(what\ happened).
 \end{align}
-&lt;br&gt; They cancel out on RHS and we are left with:&lt;br&gt;
+&lt;br&gt; They cancel out on RHS of (2) and we are left with:&lt;br&gt;
 \begin{align}
 P(Car\ behind\ door\ 1 \mid what\ happened) = P(Car\ behind\ door\ 1)
 \end{align}
