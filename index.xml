@@ -69,13 +69,17 @@ We will see why this happens, as we argue that we should switch.&lt;/p&gt;
 
 &lt;p&gt;Now, Let&amp;rsquo;s revisit Bayes rule:&lt;br&gt;&lt;/p&gt;
 
-&lt;p&gt;P(B|A) = A(A|B)P(B)/P(A)
-&lt;br&gt;or in our case &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;\begin{align}
+ P(A \mid B) = \frac{P(B \mid A) \, P(A)}{P(B)}
+\end{align}&lt;/p&gt;
 
-&lt;p&gt;P( Car behind door 1 | what happened) =
-P(what happened | Car behind door 1) * P(Car behind door 1) / P(what happened)&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;or in our case &lt;br&gt;&lt;/p&gt;
 
-&lt;p&gt;[Note: When conditioning information is not there, we have condition with the information we had before the revelation]&lt;/p&gt;
+&lt;p&gt;\begin{align}
+\hspace{-80pt}P(Car\ behind\ door\ 1 \mid what\ happened) = \frac{P(what\ happened | Car\ behind\ door\ 1) * P(Car\ behind\ door\ 1)}{P(what\ happened)}
+\end{align}&lt;/p&gt;
+
+&lt;p&gt;[Note: When conditioning information is not there, we have to condition with the information we had before the revelation]&lt;/p&gt;
 
 &lt;p&gt;We have ascertained that P(what happened | Car behind door 1) = &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;.
 &lt;br&gt;Now what is P( what happened)? We have to find the probability of &amp;ldquo;What happened&amp;rdquo; given our prior knowledge, that is at the beginning of the game. Or more clearly, what is the probability that I would have chosen door 1, and then Monty would have revealed door 3 to be having a goat?
@@ -84,19 +88,26 @@ P(what happened | Car behind door 1) * P(Car behind door 1) / P(what happened)&l
 &lt;p&gt;Hence net probability of &amp;ldquo;What happened&amp;rdquo; given our prior beliefs is &lt;br&gt;
 (&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;)*(&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;) + 1 * (&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;) = &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;.&lt;/p&gt;
 
-&lt;p&gt;So, we see that  P(what happened | Car behind door 1) = P(what happened).
+&lt;p&gt;So, we see that&lt;br /&gt;
+\begin{align}
+P(what\ happened \mid Car\ behind\ door\ 1) = P(what\ happened).
+\end{align}
 &lt;br&gt; They cancel out on RHS and we are left with:&lt;br&gt;
-P( Car behind door 1 | what happened) = P(Car behind door 1 | knowledge before game).
+\begin{align}
+P(Car\ behind\ door\ 1 \mid what\ happened) = P(Car\ behind\ door\ 1)
+\end{align}
 &lt;br&gt;So, now we know why the probability stays the same even after revelation.&lt;/p&gt;
 
 &lt;p&gt;Now,&lt;/p&gt;
 
-&lt;p&gt;P( Car behind door 1 | what happened) + P( Car behind door 2 | what happened) + P( Car behind door 3 | what happened) = 1.&lt;/p&gt;
-
-&lt;p&gt;But,
-P( Car behind door 3 | what happened) = 0&lt;/p&gt;
-
-&lt;p&gt;So, P( Car behind door 2 | what happened) = &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;.&lt;/p&gt;
+&lt;p&gt;\begin{align}
+\hspace{-110pt}P( Car\ behind\ door\ 1 \mid what\ happened) + P( Car\ behind\ door 2 \mid what\ happened) + P( Car\ behind\ door\ 3 \mid what\ happened) = 1.
+\end{align}
+But,
+\begin{align}
+P( Car\ behind\ door\ 3 \mid what\ happened) = 0
+\end{align}
+So, P( Car behind door 2 | what happened) = &lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;.&lt;/p&gt;
 
 &lt;p&gt;Hence we should switch.&lt;/p&gt;
 
@@ -132,9 +143,11 @@ Do you stick with your original door (&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub
 &lt;li&gt;For another puzzle in probability basics see &lt;a href=&#34;https://en.wikipedia.org/wiki/Two_envelopes_problem&#34; target=&#34;_blank&#34;&gt;Two Envelopes Problem&lt;/a&gt;.&lt;br&gt;&lt;/li&gt;
 &lt;li&gt;Bayesian approach fits nicely into machine learning. A model needs to update its belief accordingly, upon seeing new data. This is called the problem of posterior inference.
 &lt;br&gt;&lt;/li&gt;
-&lt;li&gt;It also enables us to have a measure of uncertainty in our beliefs. This is more powerful than just knowing which is the more suitable choice.
-&lt;br&gt;&lt;/li&gt;
-&lt;li&gt;See this nature &lt;a href=&#34;https://www.nature.com/articles/nature14541&#34; target=&#34;_blank&#34;&gt;article&lt;/a&gt; for an intro to Probabilistic Machine Learning.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;It also enables us to have a measure of uncertainty in our beliefs. This is more powerful than just knowing which is the more suitable choice.
+&lt;br&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;See this nature &lt;a href=&#34;https://www.nature.com/articles/nature14541&#34; target=&#34;_blank&#34;&gt;article&lt;/a&gt; for an intro to Probabilistic Machine Learning.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
     </item>

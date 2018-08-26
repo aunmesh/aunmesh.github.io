@@ -95,6 +95,34 @@ So, what is the problem? Problem statement(taken from wiki): Suppose you&rsquo;r
   
 
   <title>Monty Hall Problem : Way of the Bayesian | Asim Unmesh</title>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -375,13 +403,17 @@ We will see why this happens, as we argue that we should switch.</p>
 
 <p>Now, Let&rsquo;s revisit Bayes rule:<br></p>
 
-<p>P(B|A) = A(A|B)P(B)/P(A)
-<br>or in our case <br></p>
+<p>\begin{align}
+ P(A \mid B) = \frac{P(B \mid A) \, P(A)}{P(B)}
+\end{align}</p>
 
-<p>P( Car behind door 1 | what happened) =
-P(what happened | Car behind door 1) * P(Car behind door 1) / P(what happened)</p>
+<p><br>or in our case <br></p>
 
-<p>[Note: When conditioning information is not there, we have condition with the information we had before the revelation]</p>
+<p>\begin{align}
+\hspace{-80pt}P(Car\ behind\ door\ 1 \mid what\ happened) = \frac{P(what\ happened | Car\ behind\ door\ 1) * P(Car\ behind\ door\ 1)}{P(what\ happened)}
+\end{align}</p>
+
+<p>[Note: When conditioning information is not there, we have to condition with the information we had before the revelation]</p>
 
 <p>We have ascertained that P(what happened | Car behind door 1) = <sup>1</sup>&frasl;<sub>2</sub>.
 <br>Now what is P( what happened)? We have to find the probability of &ldquo;What happened&rdquo; given our prior knowledge, that is at the beginning of the game. Or more clearly, what is the probability that I would have chosen door 1, and then Monty would have revealed door 3 to be having a goat?
@@ -390,19 +422,26 @@ P(what happened | Car behind door 1) * P(Car behind door 1) / P(what happened)</
 <p>Hence net probability of &ldquo;What happened&rdquo; given our prior beliefs is <br>
 (<sup>1</sup>&frasl;<sub>2</sub>)*(<sup>1</sup>&frasl;<sub>3</sub>) + 1 * (<sup>1</sup>&frasl;<sub>3</sub>) = <sup>1</sup>&frasl;<sub>2</sub>.</p>
 
-<p>So, we see that  P(what happened | Car behind door 1) = P(what happened).
+<p>So, we see that<br />
+\begin{align}
+P(what\ happened \mid Car\ behind\ door\ 1) = P(what\ happened).
+\end{align}
 <br> They cancel out on RHS and we are left with:<br>
-P( Car behind door 1 | what happened) = P(Car behind door 1 | knowledge before game).
+\begin{align}
+P(Car\ behind\ door\ 1 \mid what\ happened) = P(Car\ behind\ door\ 1)
+\end{align}
 <br>So, now we know why the probability stays the same even after revelation.</p>
 
 <p>Now,</p>
 
-<p>P( Car behind door 1 | what happened) + P( Car behind door 2 | what happened) + P( Car behind door 3 | what happened) = 1.</p>
-
-<p>But,
-P( Car behind door 3 | what happened) = 0</p>
-
-<p>So, P( Car behind door 2 | what happened) = <sup>2</sup>&frasl;<sub>3</sub>.</p>
+<p>\begin{align}
+\hspace{-110pt}P( Car\ behind\ door\ 1 \mid what\ happened) + P( Car\ behind\ door 2 \mid what\ happened) + P( Car\ behind\ door\ 3 \mid what\ happened) = 1.
+\end{align}
+But,
+\begin{align}
+P( Car\ behind\ door\ 3 \mid what\ happened) = 0
+\end{align}
+So, P( Car behind door 2 | what happened) = <sup>2</sup>&frasl;<sub>3</sub>.</p>
 
 <p>Hence we should switch.</p>
 
@@ -438,9 +477,11 @@ Do you stick with your original door (<sup>1</sup>&frasl;<sub>100</sub>), or the
 <li>For another puzzle in probability basics see <a href="https://en.wikipedia.org/wiki/Two_envelopes_problem" target="_blank">Two Envelopes Problem</a>.<br></li>
 <li>Bayesian approach fits nicely into machine learning. A model needs to update its belief accordingly, upon seeing new data. This is called the problem of posterior inference.
 <br></li>
-<li>It also enables us to have a measure of uncertainty in our beliefs. This is more powerful than just knowing which is the more suitable choice.
-<br></li>
-<li>See this nature <a href="https://www.nature.com/articles/nature14541" target="_blank">article</a> for an intro to Probabilistic Machine Learning.</li>
+
+<li><p>It also enables us to have a measure of uncertainty in our beliefs. This is more powerful than just knowing which is the more suitable choice.
+<br></p></li>
+
+<li><p>See this nature <a href="https://www.nature.com/articles/nature14541" target="_blank">article</a> for an intro to Probabilistic Machine Learning.</p></li>
 </ol>
 
     </div>
