@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Probability on Asim Unmesh</title>
+    <link>https://aunmesh.github.io/tags/probability/</link>
+    <description>Recent content in Probability on Asim Unmesh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy Asim Unmesh; 2018</copyright>
+    <lastBuildDate>Sun, 26 Aug 2018 07:00:23 +0530</lastBuildDate>
+    
+	<atom:link href="https://aunmesh.github.io/tags/probability/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Two Envelopes</title>
+      <link>https://aunmesh.github.io/post/two-envelopes/</link>
+      <pubDate>Sun, 26 Aug 2018 07:00:23 +0530</pubDate>
+      
+      <guid>https://aunmesh.github.io/post/two-envelopes/</guid>
+      <description>Two Envelopes Paradox is another one of those problems which test your probability and math basics. Some times being mathematically correct, means being methodical and writing each step properly in your logic. Leaving nothing but the axioms as assumptions.
+So let&amp;rsquo;s quickly get into the problem.
+The problem Wiki Link
+&amp;ldquo;You are given two indistinguishable envelopes, each containing money, one contains twice as much as the other. You may pick one envelope and keep the money it contains.</description>
+    </item>
+    
+    <item>
+      <title>Monty Hall Problem : Way of the Bayesian</title>
+      <link>https://aunmesh.github.io/post/monty-hall/</link>
+      <pubDate>Thu, 23 Aug 2018 04:52:10 +0530</pubDate>
+      
+      <guid>https://aunmesh.github.io/post/monty-hall/</guid>
+      <description>Monty Hall Problem is famous problem in probability. It is not only famous, but also important. This problem tests how good we understand probability. One of its appearence in popular culture is in this scene of &amp;ldquo;21&amp;rdquo; movie. Please ignore, the explanation given there. But I bet you can&amp;rsquo;t ignore the amazing Kevin Spacey.
+
+So, what is the problem? Problem statement(taken from wiki): Suppose you&amp;rsquo;re on a game show, and you&amp;rsquo;re given the choice of three doors: Behind one door is a car; behind the others, goats.</description>
+    </item>
+    
+  </channel>
+</rss>
