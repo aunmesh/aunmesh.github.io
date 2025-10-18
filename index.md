@@ -5,26 +5,27 @@ title: Home
 
 # Asim Unmesh
 *PhD Candidate, Electrical & Computer Engineering, Purdue University (USA)*  
-**Human Activity Understanding (HAU) for Manufacturing & Industrial Domains**
+**Thesis Topic: Scalable and Compositional Human Activity Understanding (HAU) for Object Centric Tasks**
+
+*Thesis Motivation in one line:* **Scalability enables real-world deployment; compositionality unlocks richer applications.**
 
 <div style="margin-top:0.6rem"></div>
 
-I study how to make activity understanding **scale** across tasks and environments and how to make it **compositional**—
-representing procedures via reusable parts (atomic actions → substeps → steps) and **human–object / object–object** interactions.
+I am interested how to make human activity understanding **scale** and how to make it **compositional**.
 
 ---
 
 ## Motivation
-Manufacturing and production are core human endeavors that generate material wealth, security, and prosperity. Improving efficiencies
+Manufacturing and production are core human endeavors that generate material wealth and prosperity. Improving efficiencies
 can raise living standards and reduce waste, benefiting both society and the environment.  
-**Why HAU here?** Better **work-instruction design**, **operator training**, **AI task copilots**, and **robotic imitation learning**.
+
+**Applications of HAU?** Better **work-instruction design**, **Worker training and feedback**, **AI task copilots and task assistants**, and **robotic imitation learning/ learning from human demonstration**.
 
 ## Research Focus
-**Two gaps in today’s HAU:**
-1. **Scalability** — robust transfer across new activities, facilities, and visual conditions.  
-2. **Compositionality** — structured understanding via task hierarchies and interactions (human–object, object–object).
+1. **Scalability** — Performance across new activities, facilities, and visual conditions.  
+2. **Compositionality** — Structured understanding via task hierarchies and interactions (human–object, object–object) - among other compositional elements.
 
-*Thesis in one line:* **Scalability enables real-world deployment; compositionality unlocks richer applications.**
+
 
 ## Challenges
 **Scalability bottlenecks:** Annotation • Generalization • Training & Evaluation.  
