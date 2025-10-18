@@ -7,11 +7,9 @@ title: Home
 *PhD Candidate, Electrical & Computer Engineering, Purdue University (USA)*  
 **Thesis Topic: Scalable and Compositional Human Activity Understanding (HAU) for Object Centric Tasks**
 
-*Thesis Motivation in one line:* **Scalability enables real-world deployment; compositionality unlocks richer applications.**
+*Thesis Motivation in one line:* **Scalability enables real-world deployment; compositionality unlocks details of activities enabling richer applications.**
 
 <div style="margin-top:0.6rem"></div>
-
-I am interested how to make human activity understanding **scale** and how to make it **compositional**.
 
 ---
 
@@ -22,37 +20,36 @@ can raise living standards and reduce waste, benefiting both society and the env
 **Applications of HAU?** Better **work-instruction design**, **Worker training and feedback**, **AI task copilots and task assistants**, and **robotic imitation learning/ learning from human demonstration**.
 
 ## Research Focus
-1. **Scalability** — Performance across new activities, facilities, and visual conditions.  
-2. **Compositionality** — Structured understanding via task hierarchies and interactions (human–object, object–object) - among other compositional elements.
+1. **Scalability** — Scalability refers to performance across new activities, facilities, and visual conditions.
+2. **Compositionality** — Compositionality in the context of HAU refers to structured understanding suchas using task hierarchies and interactions (human–object, object–object) - among other compositional elements.
+
 
 
 
 ## Challenges
-**Scalability bottlenecks:** Annotation • Generalization • Training & Evaluation.  
-**Compositionality bottlenecks:** Multi-scale representations • Relational reasoning • State/causality • Language–vision grounding •
-Combinatorial reuse • Data scarcity for structure • Evaluation gaps.
+**Scalability bottlenecks:** Video Annotation • Generalization • Training & Evaluation.  
+**Compositionality bottlenecks:** Fine-grained compositional understanding • Learning of relations (such as causal relations, part-whole relations) between different compositional elements • Challenges in defining and annotating compositional elements
 
-## Approach (preview)
-- **Open-vocabulary / training-free** baselines to cut labeling burden.  
-- **Interaction-centric** representations & **task hierarchies**.  
-- **Synthetic+real** pipelines to probe generalization at scale.  
-- **Benchmarks & metrics** for hierarchy and interaction fidelity.
+## Overview of Research for Scalable Human Action Understanding
+- **Open-vocabulary, zero-shot Action Segmentation**    
+- \[In Progress\] **Synthetic+real** pipelines.
+
+## Overview of Research for Compositional Human Action Understanding
+- **Novel Object-Object Interaction Dataset**
+- **Interaction-centric** representations for Action Recognition
+- \[In Progress\] **Temporal Grounding in Assembly Activities** using Video-Language Models
+
 
 ---
 
 ## Selected Work
 - **Interacting Objects Dataset** — 10k object–object interaction annotations for richer dynamic scene representations. *(IEEE RA‑L, 2024)*
 - **Open‑Vocabulary Temporal Action Segmentation** — training‑free pipeline using VLMs and optimal transport for temporal consistency. *(Under review)*
-- **Assemblify / Assemblify‑VR** — intuitive authoring of assembly animations and VR training content. *(C&E accepted; others under review)*
-
-<small>More projects, preprints, and code on request; links coming soon.</small>
-
-## Publications
-A compact list is coming soon. Representative areas: **temporal action segmentation**, **interaction modeling**, **VR/XR training**.
+- **Assemblify: Generating Adaptive On-Demand 3D Animations for Context-Aware Mechanical Assembly Guidance** — Agentic Approach for assembly activity guidance using Assembly by Disassembly Algorithm. *(C&E accepted; others under review)*
 
 ## Contact
 - Email: <a href="mailto:a.unmesh@gmail.com">a.unmesh@gmail.com</a>  
-- GitHub: <a href="https://github.com/aunmesh">aunmesh</a> &nbsp;•&nbsp; Google Scholar (coming soon)
+- Google Scholar: <a href="https://scholar.google.com/citations?user=Z8VMA0w">aunmesh</a>
 
 <div style="height:1rem"></div>
 <sub>© {{ site.time | date: '%Y' }} Asim Unmesh</sub>
