@@ -26,18 +26,25 @@ can raise living standards and reduce waste, benefiting both society and the env
 
 
 
-## Challenges
-**Scalability bottlenecks:** Video Annotation • Generalization • Training & Evaluation.  
-**Compositionality bottlenecks:** Fine-grained compositional understanding • Learning of relations (such as causal relations, part-whole relations) between different compositional elements • Challenges in defining and annotating compositional elements
+### Challenges of Scalability for HAU
+1. Data Bottleneck - Sourcing relevant videos, pre-processing, annotating for training and evaluation 
+2. Generalization Bottleneck  - Performing across different scenarios such as task changes, environment changes among others.
+3. Training and Evaluation Bottleneck - Compute, knowledge and skill requirements for training and evaluating state of the art systems for HAU.
+
+### Challenges of Compositionality for HAU
+1. Challenges in defining and annotating compositional elements
+2. Fine-grained compositional understanding
+3. Learning of relations (such as causal relations, part-whole relations) between different compositional elements
 
 ## Overview of Research for Scalable Human Action Understanding
-- **Open-vocabulary, zero-shot Action Segmentation**    
+- \[Under-Review\] **Open-vocabulary, zero-shot Action Segmentation**    
 - \[In Progress\] **Synthetic+real** pipelines.
 
 ## Overview of Research for Compositional Human Action Understanding
-- **Novel Object-Object Interaction Dataset**
-- **Interaction-centric** representations for Action Recognition
-- \[In Progress\] **Temporal Grounding in Assembly Activities** using Video-Language Models
+1. \[Published\] **Novel Object-Object Interaction Dataset** - Published at IEEE RA-L 2023, presented at ICRA 2024
+  - **Interaction-centric** representations for Action Recognition
+2. \[Under Review\]
+3. \[In Progress\] **Temporal Grounding in Assembly Activities** using Video-Language Models
 
 
 ---
