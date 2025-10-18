@@ -49,7 +49,7 @@ can raise living standards and reduce waste, benefiting both society and the env
 
 ## Contact
 - Email: <a href="mailto:a.unmesh@gmail.com">a.unmesh@gmail.com</a>  
-- Google Scholar: <a href="https://scholar.google.com/citations?user=Z8VMA0w">aunmesh</a>
+- <a href="https://scholar.google.com/citations?user=Z8VMA0w">Google Scholar Page</a>
 
 <div style="height:1rem"></div>
 <sub>© {{ site.time | date: '%Y' }} Asim Unmesh</sub>
